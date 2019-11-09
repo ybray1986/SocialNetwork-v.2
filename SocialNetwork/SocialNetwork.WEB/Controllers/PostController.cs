@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 
 namespace SocialNetwork.WEB.Controllers
 {
-    public class PostController : Controller
+    public class PostController : ApiController
     {
-        // GET: Post
-        public PartialViewResult Post()
+        [HttpGet]
+        IHttpActionResult Post(int id)
         {
-            return PartialView();
+            return Ok();
         }
     }
 }

@@ -22,6 +22,8 @@ namespace SocialNetwork.WEB
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/app.css",
                       "~/Content/theme.css"));
+            bundles.Add(new ScriptBundle("~/bundles/utility").Include(
+                "~/Scripts/Utility.js"));
         }
     }
 }
