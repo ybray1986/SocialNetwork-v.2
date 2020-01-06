@@ -35,4 +35,11 @@ namespace SocialNetwork.WEB.Entity
     //    public int Id { get; set; }
     //    public string Name { get; set; }
     //}
+    public class DBInitializer: DropCreateDatabaseIfModelChanges<SocialNetworkContext>
+    {
+        protected override void Seed(SocialNetworkContext context)
+        {
+            base.Seed(context);
+        }
+    }
 }

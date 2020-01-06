@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SocialNetwork.WEB.Repositories
 {
-    interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         void Add(T model);
         void Update(T model);
